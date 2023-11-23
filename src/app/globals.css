@@ -49,30 +49,32 @@
   }
 }
 
+/* Cursor */
+
+.circle {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 200px;
+  pointer-events: none;
+}
+
+/* End Cursor */
+
 /* Scrollbar */
 
 /* Firefox */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: white white;
+  overflow: hidden !important;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
+  display: none;
 }
-
-*::-webkit-scrollbar-track {
-  background: white;
-  border-radius: 0px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: white;
-  border-radius: 0px;
-}
-
 /* End Scrollbar */
 
 /* Gellery */

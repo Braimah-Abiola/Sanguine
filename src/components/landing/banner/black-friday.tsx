@@ -7,8 +7,8 @@ const BlackFridayBanner = () => {
       <Marquee autoFill>
         <div className="flex flex-row space-x-4 ml-8">
           <Zap color="white" fill="white" />
-          <p className="uppercase text-white text-base md:text-lg">
-            Black days! - up to 80% off
+          <p className="uppercase text-white text-base md:text-base">
+            Black days! - up to 20% off
           </p>
         </div>
       </Marquee>
