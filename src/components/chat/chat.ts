@@ -1,4 +1,4 @@
-import React, { Component, ReactNode } from "react";
+import { useEffect, forwardRef } from "react";
 
 interface ChatwootSettings {
   hideMessageBubble: boolean;
@@ -12,19 +12,25 @@ interface ChatwootSDKSettings {
   baseUrl: string;
 }
 
-class ChatwootWidget extends Component {
-  componentDidMount(): void {
+declare global {
+  interface Window {
+    chatwootSettings: ChatwootSettings;
+  }
+}
+
+const ChatwootWidget = forwardRef((props, ref) => {
+  useEffect(() => {
     // Add Chatwoot Settings
-    (window as any).chatwootSettings = {
+    window.chatwootSettings = {
       hideMessageBubble: false,
       position: "right", // This can be left or right
       locale: "en", // Language to be set
       type: "standard", // [standard, expanded_bubble]
-    } as ChatwootSettings;
+    };
 
     (function (d: Document, t: string) {
       var BASE_URL = "https://app.chatwoot.com";
-      var g = d.createElement(t) as HTMLScriptElement; // Explicit type assertion here
+      var g = d.createElement(t) as HTMLScriptElement;
       var s = d.getElementsByTagName(t)[0];
       g.src = BASE_URL + "/packs/js/sdk.js";
       g.defer = true;
@@ -37,11 +43,11 @@ class ChatwootWidget extends Component {
         } as ChatwootSDKSettings);
       };
     })(document, "script");
-  }
+  }, []);
 
-  render(): ReactNode {
-    return null;
-  }
-}
+  return null;
+});
+
+ChatwootWidget.displayName = "ChatwootWidget";
 
 export default ChatwootWidget;

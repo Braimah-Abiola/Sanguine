@@ -8,13 +8,14 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Skeleton } from "@/components/ui/skeleton";
+import { ShoppingCartIcon } from "lucide-react";
 import Link from "next/link";
 
 const ShoppingCart = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <ShoppingCart />
+        <ShoppingCartIcon />
       </SheetTrigger>
       <SheetContent className="pb-[58px] md:pb-16">
         <SheetHeader>
