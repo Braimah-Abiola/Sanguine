@@ -25,21 +25,21 @@ const ShoppingCart = () => {
         <div className="h-full flex flex-col justify-between">
           <div className="flex flex-col md:gap-1 mt-4 md:mt-4">
             <div className="w-full flex flex-row justify-between">
-              <h2 className="uppercase text-3xl md:text-7xl font-bold">Want</h2>
-              <h2 className="uppercase text-3xl md:text-7xl font-bold">To</h2>
-              <h2 className="uppercase text-3xl md:text-7xl font-bold">Add</h2>
+              <h2 className="uppercase text-3xl md:text-7xl font-black">Want</h2>
+              <h2 className="uppercase text-3xl md:text-7xl font-black">To</h2>
+              <h2 className="uppercase text-3xl md:text-7xl font-black">Add</h2>
             </div>
 
             <div className="w-full flex flex-row justify-between">
-              <h2 className="uppercase text-3xl md:text-7xl font-bold">
+              <h2 className="uppercase text-3xl md:text-7xl font-black">
                 Something
               </h2>
-              <h2 className="uppercase text-3xl md:text-7xl font-bold">To</h2>
-              <h2 className="uppercase text-3xl md:text-7xl font-bold">Your</h2>
+              <h2 className="uppercase text-3xl md:text-7xl font-black">To</h2>
+              <h2 className="uppercase text-3xl md:text-7xl font-black">Your</h2>
             </div>
 
             <div className="w-full flex flex-row justify-between">
-              <h2 className="uppercase text-3xl md:text-7xl font-bold">
+              <h2 className="uppercase text-3xl md:text-7xl font-black">
                 Cart?
               </h2>
             </div>

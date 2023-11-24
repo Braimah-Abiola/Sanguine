@@ -51,9 +51,8 @@ const LandingGallery: React.FC = () => {
   }, []);
 
   return (
-    <div className="main">
+    <div className="-mt-20">
       <div className="spacer"></div>
-
       <div className="gallery" ref={gallery}>
         <Column
           galleryImages={[galleryImages[0], galleryImages[1], galleryImages[2]]}
@@ -79,8 +78,6 @@ const LandingGallery: React.FC = () => {
           y={y4}
         />
       </div>
-
-      <div className="spacer"></div>
     </div>
   );
 };

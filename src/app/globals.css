@@ -68,15 +68,13 @@
 
 /* Firefox */
 * {
-  overflow: hidden !important;
+  scrollbar-width: none;
 }
-
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   display: none;
 }
 /* End Scrollbar */
-
 
 /* Gallery */
 

@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 
-const LandingWrapper = ({
+const Wrapper = ({
   className,
   children,
 }: {
@@ -11,7 +11,7 @@ const LandingWrapper = ({
   return (
     <div
       className={cn(
-        "mx-auto w-full max-w-screen-[1920px] px-2.5 md:px-40",
+        "mx-auto w-full max-w-screen-[1920px] px-2.5 md:px-20",
         className
       )}
     >
@@ -20,4 +20,4 @@ const LandingWrapper = ({
   );
 };
 
-export default LandingWrapper;
+export default Wrapper;
