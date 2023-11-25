@@ -1,6 +1,7 @@
 import Wrapper from "@/components/wrapper/wrapper";
 import JoinDialog from "../dialog/join";
 import Image from "next/image";
+import Link from "next/link";
 
 const BestSellers = () => {
   return (
@@ -11,12 +12,29 @@ const BestSellers = () => {
           <JoinDialog />
         </div>
         <div className="w-full flex flex-row items-center justify-between mt-12">
+          <Link href="/shop/products/sanguine-essential-tee">
+            <div className="flex flex-col items-start">
+              <div className="h-[560px] w-[435px] relative bg-[#F7F7F7] flex items-center justify-center">
+                <Image
+                  fill
+                  className=" object-cover"
+                  src="/images/common/hero_image_two.png"
+                  alt="Product image"
+                />
+              </div>
+              <h4 className=" uppercase font-bold text-xl mt-8">
+                Kith checkered sweatshirt
+              </h4>
+              <p className="text-lg">$200.00 USD</p>
+              <p className="text-lg mt-2">Short product description here.</p>
+            </div>
+          </Link>
           <div className="flex flex-col items-start">
             <div className="h-[560px] w-[435px] relative bg-[#F7F7F7] flex items-center justify-center">
               <Image
                 fill
                 className=" object-cover"
-                src="/images/common/hero_image_two.png"
+                src="/images/products/product_three.png"
                 alt="Product image"
               />
             </div>
@@ -31,7 +49,7 @@ const BestSellers = () => {
               <Image
                 fill
                 className=" object-cover"
-                src="/images/common/hero_image_one.png"
+                src="/images/products/product_one.png"
                 alt="Product image"
               />
             </div>
@@ -45,23 +63,8 @@ const BestSellers = () => {
             <div className="h-[560px] w-[435px] relative bg-[#F7F7F7] flex items-center justify-center">
               <Image
                 fill
+                src="/images/products/product_two.png"
                 className=" object-cover"
-                src="/images/common/hero_image_two.png"
-                alt="Product image"
-              />
-            </div>
-            <h4 className=" uppercase font-bold text-xl mt-8">
-              Kith checkered sweatshirt
-            </h4>
-            <p className="text-lg">$200.00 USD</p>
-            <p className="text-lg mt-2">Short product description here.</p>
-          </div>
-          <div className="flex flex-col items-start">
-            <div className="h-[560px] w-[435px] relative bg-[#F7F7F7] flex items-center justify-center">
-              <Image
-                fill
-                className=" object-cover"
-                src="/images/common/hero_image_one.png"
                 alt="Product image"
               />
             </div>

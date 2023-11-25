@@ -19,13 +19,13 @@ const Navbar = () => {
         </Link>
         <div className="flex flex-row space-x-10"></div>
         <div className="flex flex-row space-x-4 md:space-x-5">
-          <div className="w-12 h-12 bg-[#F7F7F7] hover:bg-accent transition-all cursor-pointer rounded-lg flex items-center justify-center">
+          <div className="w-12 h-12 bg-transparent hover:bg-accent transition-all cursor-pointer rounded-lg flex items-center justify-center">
             <Heart />
           </div>
-          <div className="w-12 h-12 bg-[#F7F7F7] hover:bg-accent transition-all cursor-pointer rounded-lg flex items-center justify-center">
+          <div className="w-12 h-12 bg-transparent hover:bg-accent transition-all cursor-pointer rounded-lg flex items-center justify-center">
             <ShoppingCart />
           </div>
-          <div className="w-12 h-12 bg-[#F7F7F7] hover:bg-accent transition-all cursor-pointer rounded-lg flex items-center justify-center">
+          <div className="w-12 h-12 bg-transparent hover:bg-accent transition-all cursor-pointer rounded-lg flex items-center justify-center">
             <User />
           </div>
         </div>

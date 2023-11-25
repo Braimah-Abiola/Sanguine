@@ -76,6 +76,29 @@
 }
 /* End Scrollbar */
 
+/* Preloader */
+
+.introduction {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 2147483003;
+  background-color: #070707;
+}
+
+.introduction svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 300px);
+}
+
+.introduction svg path {
+  fill: #070707;
+}
+
+/* End Preloader */
+
 /* Gallery */
 
 .gallery {

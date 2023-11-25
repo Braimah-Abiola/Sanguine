@@ -16,9 +16,7 @@ const LandingHero = () => {
               Elevate your look, embrace your style. Unleash the essence of
               fashion with confidence and comfort in every thread.
             </p>
-            <Button className="w-fit px-10 mt-10">
-              Shop Now <ChevronRight className="ml-3" />
-            </Button>
+            <Button className="w-fit px-10 mt-10">Shop Now</Button>
           </div>
 
           <div className="w-full">
