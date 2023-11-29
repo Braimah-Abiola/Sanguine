@@ -58,7 +58,7 @@ const Preloader = () => {
             <div></div>
             <div className="relative w-[220px] h-[150px] z-[2147483000]">
               <Image
-                className=" hover:scale-110 transition-all -rotate-6"
+                className=" hover:scale-110 transition duration-300 ease-in-out -rotate-6"
                 fill
                 src="/images/common/logo_white.svg"
                 alt="Sanguine logo"

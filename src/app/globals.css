@@ -76,6 +76,21 @@
 }
 /* End Scrollbar */
 
+::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+::ms-selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 /* Preloader */
 
 .introduction {

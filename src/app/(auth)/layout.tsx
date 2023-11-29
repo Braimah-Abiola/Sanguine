@@ -8,8 +8,10 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
       <div className="flex flex-col items-center justify-center w-full bg-white">
         <BlackFridayBanner />
         <Navbar />
-        {children}
       </div>
+      <main className="w-full flex justify-center min-h-[90vh]">
+        {children}
+      </main>
       <Footer />
     </div>
   );

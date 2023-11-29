@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link href="/">
           <div className="relative w-[120px] h-[50px]">
             <Image
-              className=" hover:scale-110 transition-all"
+              className="hover:scale-110 transition duration-300 ease-in-out"
               fill
               src="/images/common/logo.svg"
               alt="Sanguine logo"
@@ -25,9 +25,11 @@ const Navbar = () => {
           <div className="w-12 h-12 bg-transparent hover:bg-accent transition-all cursor-pointer rounded-lg flex items-center justify-center">
             <ShoppingCart />
           </div>
-          <div className="w-12 h-12 bg-transparent hover:bg-accent transition-all cursor-pointer rounded-lg flex items-center justify-center">
-            <User />
-          </div>
+          <Link href="/sign-in">
+            <div className="w-12 h-12 bg-transparent hover:bg-accent transition-all cursor-pointer rounded-lg flex items-center justify-center">
+              <User />
+            </div>
+          </Link>
         </div>
       </div>
     </nav>

@@ -9,7 +9,7 @@ const LandingHero = () => {
       <Wrapper className="px-2.5 md:px-10">
         <div className="flex flex-col md:flex-row w-full items-center">
           <div className="flex flex-col w-full">
-            <h1 className="text-6xl md:text-7xl font-black uppercase text-black w-full md:w-[80%]">
+            <h1 className="text-6xl md:text-[5rem] font-black uppercase text-black w-full md:w-[90%]">
               Elevate Your Wardrobe with Sanguine&apos;s Signature Style
             </h1>
             <p className="text-primary/80 font-normal text-xl mt-4 w-[70%]">
